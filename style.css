@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+:root {
+	--light-color: #5b4fd9;
+	--dark-color: #5257a9;
+	--white-color: #ffffff;
+}
+body {
+	display: flex;
+	align-items: center;
+	background-color: var(--dark-color);
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+textarea {
+	resize: none;
+	border: 1px solid silver;
+	border-radius: 2px;
+	width: 100%;
+	outline: none;
+	padding: 10px;
+	height: 150px;
+}
+textarea::-webkit-scrollbar {
+	width: 4px;
+	border-radius: 10px;
+}
+textarea::-webkit-scrollbar-button {
+	background-color: green;
+	border-radius: 10px;
+	height: 0;
+}
+textarea::-webkit-scrollbar-thumb {
+	background-color: var(--dark-color);
+	border-radius: 10px;
+}
+textarea::-webkit-scrollbar-track {
+	background-color: #e2e8f0;
+}
+::selection {
+	background-color: var(--dark-color);
+	color: white;
+}
+.row {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	flex-direction: column;
+	width: 100%;
+}
+.container {
+	background-color: var(--white-color);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 10px;
+	gap: 20px;
+	padding: 40px;
+	width: 400px;
+}
+.container h1 {
+	text-transform: capitalize;
+	color: black;
+	font-size: 25px;
+	text-align: center;
+}
+
+.row label {
+	font-size: 13px;
+	text-transform: capitalize;
+}
+
+.row select {
+	width: 100%;
+	border: 1px solid silver;
+	outline: 0;
+	height: 35px;
+	padding: 0 0 0 10px;
+}
+.btn {
+	background-color: var(--light-color);
+	color: white;
+	font-size: 14px;
+	text-transform: capitalize;
+	outline: none;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btn:hover {
+	filter: brightness(1.2);
+}
